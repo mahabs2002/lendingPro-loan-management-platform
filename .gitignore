@@ -1,0 +1,14 @@
+target/
+*.log
+*.class
+*.jar
+
+.idea/
+.vscode/
+
+application-local.yml
+.env
+
+/uploads/
+
+.DS_Store

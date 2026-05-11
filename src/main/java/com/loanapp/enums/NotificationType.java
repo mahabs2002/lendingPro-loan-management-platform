@@ -1,0 +1,2 @@
+package com.loanapp.enums;
+public enum NotificationType { LOAN_APPROVED, LOAN_REJECTED, EMI_REMINDER, OVERDUE_REMINDER, PAYMENT_SUCCESS, KYC_VERIFIED, KYC_REJECTED }
