@@ -1,10 +1,10 @@
-# 🏦 Loan Management & Repayment Platform
+# 🏦 LendingPro – Loan Management & Repayment Platform
 
-A backend fintech system built using **Java 17 + Spring Boot 3.2 + MySQL**, designed to automate loan lifecycle management including application, approval, EMI scheduling, repayment, reporting, and audit tracking.
+A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL** to manage the complete loan lifecycle including customer onboarding, KYC verification, loan application processing, EMI scheduling, repayment tracking, reporting, and audit logging.
 
 ---
 
-## 🚀 Tech Stack
+# 🚀 Tech Stack
 
 - Java 17
 - Spring Boot 3.2
@@ -12,125 +12,137 @@ A backend fintech system built using **Java 17 + Spring Boot 3.2 + MySQL**, desi
 - Spring Data JPA (Hibernate)
 - MySQL 8
 - JasperReports (PDF Reporting)
-- Apache POI (Excel Reports)
+- Apache POI (Excel Reporting)
 - Maven
 - JUnit & Mockito
-- Swagger UI
+- Swagger / OpenAPI
 
 ---
 
-## 🏗 Architecture
+# 🏗 Architecture
 
-- Modular Monolith Backend
-- Layered Architecture:
-    - Controller
-    - Service
-    - Repository
-    - DTO
-- Stateless Authentication (JWT)
-- Scheduler-based automation
+- Modular Monolith Architecture
+- Layered Backend Design:
+  - Controller Layer
+  - Service Layer
+  - Repository Layer
+  - DTO Mapping Layer
+- RESTful API Design
+- Stateless JWT Authentication
+- Scheduler-based Background Jobs
 
 ---
 
-## 🔐 Key Features
+# 🔐 Core Modules
 
-### 👤 Authentication & Authorization
-- JWT-based login system
-- Role-based access: USER / ADMIN / AUDITOR
+## 👤 Authentication & Authorization
+- JWT-based authentication
+- Role-based access control (USER / ADMIN / AUDITOR)
 - BCrypt password encryption
+- Secure API access using Spring Security
 
 ---
 
-### 👨‍💼 Customer Module
-- Profile management
-- Employment & income details
-- Address & KYC linkage
+## 👨‍💼 Customer Management
+- Customer profile management
+- Employment and income details
+- Address management
+- KYC linkage with customer records
 
 ---
 
-### 📄 KYC Module
-- Document upload & verification
-- Admin approval/rejection workflow
+## 📄 KYC Management
+- KYC document upload
+- Verification workflow
+- Admin approval/rejection process
+- KYC status tracking
 
 ---
 
-### 💰 Loan Management
-- Loan product creation (Admin)
-- Loan application system
-- Eligibility score engine
-- Approval / rejection workflow
+## 💰 Loan Management
+- Loan product creation and management
+- Loan application processing
+- Rule-based loan eligibility calculation
+- Loan approval and rejection workflow
 
 ---
 
-### 🏦 Loan Account
-- Auto account creation after approval
+## 🏦 Loan Account Management
+- Automatic loan account creation after approval
 - Loan disbursement tracking
-- Outstanding balance management
+- Outstanding balance calculation
+- Loan lifecycle status management
 
 ---
 
-### 📊 EMI System
+## 📊 EMI Management
 - Automatic EMI schedule generation
-- Principal + Interest breakdown
-- Due date tracking
+- Principal and interest calculation
+- EMI due date tracking
+- Remaining balance tracking
 
 ---
 
-### 💳 Repayment Module
+## 💳 Repayment Processing
 - EMI payment processing
-- Partial/full payment support
-- Payment history tracking
+- Partial and full repayment handling
+- Payment history maintenance
+- Transaction tracking
 
 ---
 
-### ⚠️ Penalty System
-- Overdue detection
-- Late fee calculation
-- Loan status updates
+## ⚠️ Penalty Management
+- Overdue EMI detection
+- Late payment penalty calculation
+- Loan delinquency tracking
+- Status updates for overdue loans
 
 ---
 
-### 📑 Reporting (JasperReports)
-- Loan statement PDF
-- EMI schedule PDF
-- Payment receipts
+## 📑 Reporting & Documents
+- Loan statement PDF generation
+- EMI schedule reports
+- Payment receipt generation
 - Monthly collection reports
-- Overdue reports
-- Admin dashboards
+- Overdue loan reports
+- Administrative reporting APIs
 
 ---
 
-### 🔔 Notification System
-- Loan approval alerts
+## 🔔 Notification Tracking
+- Loan approval notifications
 - EMI due reminders
 - Payment success notifications
+- Event-based notification records
 
 ---
 
-### 🧾 Audit Logging
-- Admin actions tracking
-- Loan lifecycle tracking
-- KYC and approval logs
+## 🧾 Audit Logging
+- Admin activity tracking
+- Loan lifecycle audit logs
+- KYC verification logs
+- Approval and repayment activity logs
 
 ---
 
-## 🔄 Workflow
+# 🔄 Application Workflow
 
-### Customer Flow
-Register → Login → Profile → KYC → Loan Apply → Approval → EMI → Payment → Closure
+## Customer Workflow
+Register → Login → Profile Setup → KYC Upload → Loan Application → Approval → EMI Generation → Repayment → Loan Closure
 
-### Admin Flow
-Login → KYC Verify → Approve Loans → Monitor EMIs → Reports → Audit Logs
+## Admin Workflow
+Login → KYC Verification → Loan Approval → EMI Monitoring → Reporting → Audit Review
 
 ---
 
-## 📊 API Documentation (Swagger)
+# 📊 API Documentation
+
+Swagger UI:
 http://localhost:8080/swagger-ui/index.html
 
-
 ---
 
-## 🗄 Database Tables
+# 🗄 Database Tables
 
 - users
 - customer_profile
@@ -146,36 +158,49 @@ http://localhost:8080/swagger-ui/index.html
 
 ---
 
-## ⏱ Scheduler Jobs
+# ⏱ Scheduler Jobs
 
-- EMI Reminder Job (Daily)
-- Overdue Detection Job (Daily)
-- Penalty Calculation Job (Daily)
-- Monthly Reports Generation
-- Auto Loan Closure Job
+- Daily EMI Reminder Job
+- Overdue Loan Detection Job
+- Penalty Calculation Job
+- Monthly Report Generation Job
+- Automatic Loan Closure Job
 
 ---
 
-## 📌 Highlights
+# 📌 Project Highlights
 
 - 40+ REST APIs
-- End-to-end loan lifecycle system
-- Production-style backend architecture
+- End-to-end loan lifecycle management
+- JWT-secured backend APIs
 - Real-world fintech workflow simulation
-- Clean modular design
+- Clean modular backend architecture
+- Scheduler-based automation
+- PDF & Excel reporting support
 
 ---
 
-## 🧑‍💻 Author
+# 🧪 Testing
 
-Backend Developer: Mahalakshmi  
-Experience: 1.8 Years (Java Backend)
+- Unit testing using JUnit & Mockito
+- API testing using Postman
+- Swagger API validation
 
 ---
 
-## ⚡ Status
 
-✔ Completed Backend  
-✔ Swagger Integrated  
-✔ GitHub Pushed  
-✔ Ready for AWS Deployment
+---
+
+# 🧑‍💻 Author
+
+**Mahalakshmi**  
+Java Backend Developer | 1.8 Years Experience
+
+---
+
+# ⚡ Project Status
+
+✔ Backend Development Completed  
+✔ Swagger Documentation Integrated  
+✔ GitHub Repository Configured  
+✔ Ready for Docker & AWS Deployment
