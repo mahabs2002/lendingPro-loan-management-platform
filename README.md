@@ -140,6 +140,40 @@ Login → KYC Verification → Loan Approval → EMI Monitoring → Reporting �
 Swagger UI:
 http://localhost:8080/swagger-ui/index.html
 
+OpenAPI Docs:
+http://localhost:8080/v3/api-docs
+
+---
+
+# 🐳 Docker Support
+
+## Build Docker Image
+
+```bash
+docker build -t loan-management .
+```
+
+## Run Docker Container
+
+```bash
+docker run -d --name loan-app -p 8082:8080 ^
+-e DB_URL="jdbc:mysql://host.docker.internal:3306/loandb?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC" ^
+-e DB_USERNAME="YOUR_DB_USERNAME" ^
+-e DB_PASSWORD="YOUR_DB_PASSWORD" ^
+-e JWT_SECRET="YOUR_SECRET_KEY" ^
+loan-management
+```
+
+## Verify Running Container
+
+```bash
+docker ps
+```
+
+## Access Swagger from Docker
+
+http://localhost:8082/swagger-ui/index.html
+
 ---
 
 # 🗄 Database Tables
@@ -170,24 +204,41 @@ http://localhost:8080/swagger-ui/index.html
 
 # 📌 Project Highlights
 
-- 40+ REST APIs
+- 38+ REST APIs
 - End-to-end loan lifecycle management
 - JWT-secured backend APIs
 - Real-world fintech workflow simulation
 - Clean modular backend architecture
 - Scheduler-based automation
 - PDF & Excel reporting support
+- Dockerized Spring Boot application
+- Swagger/OpenAPI integration
+- JasperReports integration
 
 ---
 
 # 🧪 Testing
 
-- Unit testing using JUnit & Mockito
+- Unit testing using JUnit 5 & Mockito
 - API testing using Postman
 - Swagger API validation
 
 ---
 
+# ⚙️ Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| DB_URL | MySQL Database URL |
+| DB_USERNAME | Database Username |
+| DB_PASSWORD | Database Password |
+| JWT_SECRET | JWT Secret Key |
+
+---
+
+# 🔗 GitHub Repository
+
+https://github.com/mahabs2002/lendingpro-loan-management-platform
 
 ---
 
@@ -202,5 +253,6 @@ Java Backend Developer | 1.8 Years Experience
 
 ✔ Backend Development Completed  
 ✔ Swagger Documentation Integrated  
+✔ Dockerized Application  
 ✔ GitHub Repository Configured  
-✔ Ready for Docker & AWS Deployment
+✔ Ready for AWS Deployment
