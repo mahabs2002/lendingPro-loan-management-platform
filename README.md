@@ -1,10 +1,10 @@
-# 🏦 LendingPro – Loan Management & Repayment Platform
+#  LendingPro – Loan Management & Repayment Platform
 
 A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL** to manage the complete loan lifecycle including customer onboarding, KYC verification, loan application processing, EMI scheduling, repayment tracking, reporting, and audit logging.
 
 ---
 
-# 🚀 Tech Stack
+#  Tech Stack
 
 - Java 17
 - Spring Boot 3.2
@@ -19,7 +19,7 @@ A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL*
 
 ---
 
-# 🏗 Architecture
+#  Architecture
 
 - Modular Monolith Architecture
 - Layered Backend Design:
@@ -33,7 +33,7 @@ A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL*
 
 ---
 
-# 🔐 Core Modules
+#  Core Modules
 
 ## 👤 Authentication & Authorization
 - JWT-based authentication
@@ -43,7 +43,7 @@ A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL*
 
 ---
 
-## 👨‍💼 Customer Management
+##  Customer Management
 - Customer profile management
 - Employment and income details
 - Address management
@@ -59,7 +59,7 @@ A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL*
 
 ---
 
-## 💰 Loan Management
+##  Loan Management
 - Loan product creation and management
 - Loan application processing
 - Rule-based loan eligibility calculation
@@ -67,7 +67,7 @@ A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL*
 
 ---
 
-## 🏦 Loan Account Management
+## Loan Account Management
 - Automatic loan account creation after approval
 - Loan disbursement tracking
 - Outstanding balance calculation
@@ -75,7 +75,7 @@ A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL*
 
 ---
 
-## 📊 EMI Management
+## EMI Management
 - Automatic EMI schedule generation
 - Principal and interest calculation
 - EMI due date tracking
@@ -83,7 +83,7 @@ A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL*
 
 ---
 
-## 💳 Repayment Processing
+##  Repayment Processing
 - EMI payment processing
 - Partial and full repayment handling
 - Payment history maintenance
@@ -91,7 +91,7 @@ A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL*
 
 ---
 
-## ⚠️ Penalty Management
+##  Penalty Management
 - Overdue EMI detection
 - Late payment penalty calculation
 - Loan delinquency tracking
@@ -109,7 +109,7 @@ A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL*
 
 ---
 
-## 🔔 Notification Tracking
+##  Notification Tracking
 - Loan approval notifications
 - EMI due reminders
 - Payment success notifications
@@ -117,7 +117,7 @@ A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL*
 
 ---
 
-## 🧾 Audit Logging
+##  Audit Logging
 - Admin activity tracking
 - Loan lifecycle audit logs
 - KYC verification logs
@@ -125,7 +125,7 @@ A backend fintech application built using **Java 17, Spring Boot 3.2, and MySQL*
 
 ---
 
-# 🔄 Application Workflow
+# Application Workflow
 
 ## Customer Workflow
 Register → Login → Profile Setup → KYC Upload → Loan Application → Approval → EMI Generation → Repayment → Loan Closure
@@ -135,7 +135,7 @@ Login → KYC Verification → Loan Approval → EMI Monitoring → Reporting �
 
 ---
 
-# 📊 API Documentation
+#  API Documentation
 
 Swagger UI:
 http://localhost:8080/swagger-ui/index.html
@@ -176,7 +176,7 @@ http://localhost:8082/swagger-ui/index.html
 
 ---
 
-# 🗄 Database Tables
+#  Database Tables
 
 - users
 - customer_profile
@@ -192,7 +192,7 @@ http://localhost:8082/swagger-ui/index.html
 
 ---
 
-# ⏱ Scheduler Jobs
+# Scheduler Jobs
 
 - Daily EMI Reminder Job
 - Overdue Loan Detection Job
@@ -217,7 +217,7 @@ http://localhost:8082/swagger-ui/index.html
 
 ---
 
-# 🧪 Testing
+#  Testing
 
 - Unit testing using JUnit 5 & Mockito
 - API testing using Postman
@@ -242,7 +242,7 @@ https://github.com/mahabs2002/lendingpro-loan-management-platform
 
 ---
 
-# 🧑‍💻 Author
+#  Author
 
 **Mahalakshmi**  
 Java Backend Developer | 1.8 Years Experience
@@ -255,4 +255,4 @@ Java Backend Developer | 1.8 Years Experience
 ✔ Swagger Documentation Integrated  
 ✔ Dockerized Application  
 ✔ GitHub Repository Configured  
-✔ Ready for AWS Deployment
+
