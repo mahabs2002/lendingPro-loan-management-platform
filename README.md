@@ -249,7 +249,7 @@ Java Backend Developer | 1.8 Years Experience
 
 ---
 
-# ⚡ Project Status
+#  Project Status
 
 ✔ Backend Development Completed  
 ✔ Swagger Documentation Integrated  
